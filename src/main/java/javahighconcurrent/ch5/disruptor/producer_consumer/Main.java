@@ -14,7 +14,7 @@ public class Main {
         Executor executor = Executors.newCachedThreadPool();
         PCDataFactory factory = new PCDataFactory();
 
-        int bufferSize = 1024;
+        int bufferSize = 2;
         Disruptor<PCData> disruptor = new Disruptor<PCData>(factory,
                 bufferSize,   //ringbuffer的大小，必须为2的整数次幂
                 executor,
@@ -48,10 +48,15 @@ public class Main {
         Producer producer = new Producer(ringBuffer);
 
         ByteBuffer bb = ByteBuffer.allocate(8);
+
         for ( long l = 0; true; l++ ){   //有主线程担任生产者
+            if ( l == 10 ){
+                break;
+            }
+
             bb.putLong(0, l);
             producer.pushData(bb);
-            Thread.sleep(1000);
+            //Thread.sleep(1000);
             System.out.println("add Data " + l);
         }
 
