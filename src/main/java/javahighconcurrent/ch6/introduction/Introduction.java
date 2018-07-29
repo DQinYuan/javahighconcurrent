@@ -1,4 +1,4 @@
-package javahighconcurrent.ch6;
+package javahighconcurrent.ch6.introduction;
 
 import java.util.Arrays;
 
