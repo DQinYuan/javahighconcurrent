@@ -5,4 +5,4 @@
 
 书籍封面：
 
-![book](assets\book.jpg)
+![book](assets/book.jpg)
