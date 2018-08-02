@@ -1,4 +1,4 @@
-package javahighconcurrent.ch5.disruptor.future_model.jdkfuture;
+package javahighconcurrent.ch5.future_model.jdkfuture;
 
 import java.util.concurrent.Callable;
 

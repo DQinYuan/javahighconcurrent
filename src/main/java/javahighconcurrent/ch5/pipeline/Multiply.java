@@ -1,4 +1,4 @@
-package javahighconcurrent.ch5.disruptor.pipeline;
+package javahighconcurrent.ch5.pipeline;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;

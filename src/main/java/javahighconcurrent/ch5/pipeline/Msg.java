@@ -1,4 +1,4 @@
-package javahighconcurrent.ch5.disruptor.pipeline;
+package javahighconcurrent.ch5.pipeline;
 
 public class Msg {
     public double i;

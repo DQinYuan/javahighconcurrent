@@ -1,18 +1,19 @@
-package javahighconcurrent.ch5.disruptor.pipeline;
+package javahighconcurrent.ch5.pipeline;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
 
-public class Div implements Runnable {
+public class Plus implements Runnable {
+
     public static BlockingQueue<Msg> bq = new LinkedBlockingDeque<>();
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             try {
                 Msg msg = bq.take();
-                msg.i = msg.i / 2;
-                System.out.println(msg.orgStr + "=" + msg.i);
+                msg.j = msg.i + msg.j;
+                Multiply.bq.add(msg);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

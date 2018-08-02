@@ -1,4 +1,4 @@
-package javahighconcurrent.ch5.disruptor.future_model.myfuture;
+package javahighconcurrent.ch5.future_model.myfuture;
 
 public class RealData implements Data {
     protected final String result;

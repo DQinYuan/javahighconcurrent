@@ -1,4 +1,4 @@
-package javahighconcurrent.ch5.disruptor.pipeline;
+package javahighconcurrent.ch5.pipeline;
 
 /**
  * 使用流水线模式，能够将原本存在数据依赖的流程并行化
