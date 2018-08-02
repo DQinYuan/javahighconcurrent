@@ -9,7 +9,7 @@
 
 
 
-## 第一章
+## 第一章 走入并行世界
 
 
 
@@ -49,9 +49,133 @@
 
 
 
-## 第二章
+## 第二章 Java并行程序基础
 
 
 
 2.3 volatile与Java内存模型
 
+https://github.com/DQinYuan/javahighconcurrent/blob/master/src/main/java/javahighconcurrent/ch2/NoVisibility.java
+
+
+
+## 第三章 JDK并发包
+
+
+
+3.2.8 堆栈去哪了：在线程池中寻找堆栈
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch3/threadpool/disappear_error
+
+
+
+## 第四章 锁的优化及注意事项
+
+
+
+4.4.3 Java中的指针：Unsafe类
+
+获得Unsafe实例的方法：
+
+https://github.com/DQinYuan/javahighconcurrent/blob/master/src/main/java/javahighconcurrent/ch4/unsafe/UnSafeFactory.java
+
+
+
+## 第五章 并行模式与算法
+
+
+
+5.4 Disruptor相关
+
+​    5.4.2 使用Disruptor实现生产者消费者问题
+
+​         https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/disruptor/producer_consumer
+
+​    5.4.4 CPU Cache的优化
+
+​        https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/disruptor/falseshare
+
+
+
+5.5 Future模式
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/future_model
+
+
+
+5.6 并行流水线
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/pipeline
+
+
+
+5.8 并行排序
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/concurrent_sort
+
+
+
+5.9 并行算法：矩阵乘法
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/matrix_multiply
+
+
+
+5.10与5.11   NIO  AIO相关
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch5/network
+
+
+
+## 第六章 Java8与并发
+
+6.1与6.2 函数式编程基础
+
+  https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/introduction
+
+​         方法引用相关Demo:
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/methodref
+
+
+
+6.4 并行流与并行排序
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/parallelstream
+
+
+
+6.5 增强的Future: CompletableFuture
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/compeletablefuture
+
+
+
+6.6 读写锁的改进：StampedLock
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/stampedlock
+
+
+
+6.7 原子类的增强
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch6/longadder
+
+
+
+## 第七章 使用Akka构建高并发程序
+
+
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch7_akka
+
+
+
+并发粒子群算法的实现：
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch7_akka/PSO
+
+
+
+## 第八章 并行程序调试
+
+https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahighconcurrent/ch8
