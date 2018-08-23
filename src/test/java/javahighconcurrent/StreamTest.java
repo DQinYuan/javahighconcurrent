@@ -1,6 +1,7 @@
 package javahighconcurrent;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,6 +19,8 @@ public class StreamTest {
                 .map(String::toLowerCase)
                 .collect(Collectors.toList());
         System.out.println(result);
+
+        test.stream();
 
 
 
