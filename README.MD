@@ -121,6 +121,35 @@ https://github.com/DQinYuan/javahighconcurrent/blob/master/src/main/java/javahig
 
 ## 第五章 并行模式与算法
 
+5.1 探讨单例模式
+
+懒汉模式不推荐双检查，这种方法丑陋，复杂，甚至在低版本的JDK中都不能保证其正确性。
+
+LazySingleton的推荐做法：
+
+​           利用JVM对内部类的延迟加载实现懒加载单例
+
+ ```
+/**
+ * 书中认为的单例模式的最优实现方案
+ */
+public class StaticSingleton {
+
+    private StaticSingleton(){
+        System.out.println("StaticSingleton is create");
+    }
+
+    private static class SingletonHolder{   //利用了JVM对内部类的延迟加载
+        private static StaticSingleton instance = new StaticSingleton();
+    }
+
+    public static StaticSingleton getInstance(){   //只有在第一次调用该方法时，单例才会被创建
+        return SingletonHolder.instance;
+    }
+
+}
+ ```
+
 
 
 5.4 Disruptor相关
