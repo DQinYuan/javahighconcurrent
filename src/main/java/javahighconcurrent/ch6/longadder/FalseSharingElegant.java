@@ -57,7 +57,7 @@ public class FalseSharingElegant implements Runnable {
      * 必须要加额外的JVM参数： -XX:-RestrictContended
      * 该注解才能生效
      * 否则该注解会被忽略
-     * @sun.misc.Contented
+     * @sun.misc.Contended
      */
     @Contended
     public final static class VolatileLong {

@@ -229,6 +229,12 @@ https://github.com/DQinYuan/javahighconcurrent/tree/master/src/main/java/javahig
 
 
 
+使用Java8中Contended注解更加优雅地解决伪共享问题：
+
+​     https://github.com/DQinYuan/javahighconcurrent/blob/master/src/main/java/javahighconcurrent/ch6/longadder/FalseSharingElegant.java
+
+
+
 ## 第七章 使用Akka构建高并发程序
 
 
