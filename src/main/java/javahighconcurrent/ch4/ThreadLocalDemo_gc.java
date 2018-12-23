@@ -8,11 +8,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 只有java7能看到效果
+ * 用于验证ThreadLocal弱引用特性
+ *  JVM发现弱引用就会立即将其消除
  *
+ * 书:151~152页
  *
  */
-public class ThreadLocalDeno_gc {
+public class ThreadLocalDemo_gc {
 
     static volatile ThreadLocal<SimpleDateFormat> tl =
             new ThreadLocal<SimpleDateFormat>() {
@@ -64,6 +66,7 @@ public class ThreadLocalDeno_gc {
         }
         cd.await();
         System.out.println("mission complete!!!");
+        //失去tl引用之后, threadLocal只剩下一个弱引用了, jvm发现弱引用就会立即进行回收
         tl = null;
         System.gc();
         System.out.println("first GC complete!!!");
